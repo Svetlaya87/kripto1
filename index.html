@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kripto</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script defer src="./assets/js/app.js"></script>
+
+
+
+</head>
+<body>
+
+    <div class=" w-auto d-flex m-5 flex-column justify-content-start">
+        
+        <label class="form-check-label" for="secretText">
+            Текст, который нужно зашифровать, только русский язык
+        </label>
+        <input  class="form-control" type="text" name="txt" id="secretText">
+        
+        <label class="form-check-label" for="secretNumber">
+            Число для шифрования
+        </label>
+        <input  class="form-control" type="number" name="number" id="secretNumber">
+        
+        <button onclick="kripto()">Enter!</button> 
+        
+        <output id="Result2" class="my-5"></output>
+    </div>
+    
+</body>
+</html>
