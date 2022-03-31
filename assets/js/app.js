@@ -62,7 +62,16 @@ function kripto() {
 
 
 
+/*
+упрощение от Сережи.
+    for(let i =0; i<str.length; i++){
+        let Index = abetka.indexOf(str[i]);
+        if( Index !== -1 ) {
+            newAbetka.push( abetka[ ( Index + shifr ) % abetka.length ] );
+        }
+    }        
 
+*/
 
 
 
