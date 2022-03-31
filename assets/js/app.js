@@ -96,14 +96,9 @@ function dekripto() {
                     newAbetka.push(abetka[  Index - shifr  % abetka.length ] );
                 }
 
-
-                
-                 
-                
-
             }
                 //console.log(abetka);
-                //console.log(newAbetka);Index
+                //console.log(newAbetka);
     }        
     console.log(newAbetka);
     
@@ -111,8 +106,24 @@ function dekripto() {
     
 }
 
+/*
 
+    for(let i =0; i<str.length; i++){
+        let Index=abetka.indexOf(str[i]);
+        
+        if( Index !== -1 ){
 
+            let N=abetka.length;
+            
+
+            newAbetka.push(abetka[ ( Index - shifr % N + N ) % N ] );
+
+            
+        }
+    }        
+
+  если а<в, то а%в==а остаток от а на в равен а
+*/
 
 
 
