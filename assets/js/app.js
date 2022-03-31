@@ -73,5 +73,46 @@ function kripto() {
 
 */
 
+function dekripto() {
+    // Code me to return true or false
+
+   
+   let str=secretText2.value.toLowerCase().split('');
+   console.log(str);
+   let newAbetka=[];
+   let abetka='абвгдеёжзийклмнопрстуфхцчшщъыьэюя'.split('');
+   console.log(abetka);
+    let shifr=secretNumber2.value*1;
+
+    
+    for(let i =0; i<str.length; i++){
+       let Index=abetka.indexOf(str[i]);
+        
+            if( Index !== -1 ){
+
+                if ( (Index - shifr  % abetka.length)<0 ){
+                    newAbetka.push(abetka[ abetka.length+( Index - shifr  % abetka.length) ] );
+                }else{
+                    newAbetka.push(abetka[  Index - shifr  % abetka.length ] );
+                }
+
+
+                
+                 
+                
+
+            }
+                //console.log(abetka);
+                //console.log(newAbetka);Index
+    }        
+    console.log(newAbetka);
+    
+    Result.innerHTML=`${newAbetka.join('')}`;
+    
+}
+
+
+
+
 
 
